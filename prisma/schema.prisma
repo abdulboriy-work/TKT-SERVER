@@ -1,0 +1,38 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+model Admin {
+    id          String   @id @default(uuid())
+    phoneNumber String   @unique @default("-")
+    createdAt   DateTime @default(now())
+    firstName   String
+    lastName    String
+    password    String
+    username    String   @unique
+    role        String   @default("ADMIN")
+
+    @@map("admins")
+}
+
+model Exam {
+    id           String   @id @default(uuid())
+    examDate     String
+    module       String
+    candidateNum String
+    firstName    String
+    lastName     String
+    idNumber     String
+    dateOfBirth  String
+    examCenter   String
+    result       String?
+    createdAt    DateTime @default(now())
+    updatedAt    DateTime @updatedAt
+
+    @@map("exams")
+}
