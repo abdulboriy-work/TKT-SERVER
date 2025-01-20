@@ -1,6 +1,6 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client/extension';
 import { comparePasswords, hashPassword } from '../utils/auth';
-import { generateToken } from '@/utils/jwt';
+import { generateToken } from '../utils/jwt';
 
 
 const prisma = new PrismaClient();

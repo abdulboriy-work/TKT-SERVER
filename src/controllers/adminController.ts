@@ -1,5 +1,5 @@
-import { AdminService } from '@/services/adminService';
-import { hashPassword } from '@/utils/auth';
+import { AdminService } from '../services/adminService';
+import { hashPassword } from '../utils/auth';
 import { Request, Response } from 'express';
 
 

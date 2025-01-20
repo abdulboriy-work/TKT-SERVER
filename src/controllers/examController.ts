@@ -1,5 +1,5 @@
-import { ExamService } from '@/services/examService';
-import { Exam } from '@prisma/client';
+import { ExamService } from '../services/examService';
+
 import { Request, Response } from 'express';
 import { z } from 'zod';
 
