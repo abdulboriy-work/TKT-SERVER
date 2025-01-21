@@ -1,7 +1,8 @@
-import { ExamService } from '../services/examService';
 
+import { Exam } from '@prisma/client';
 import { Request, Response } from 'express';
 import { z } from 'zod';
+import { ExamService } from '~/services/examService';
 
 const bulkExamSchema = z.array(z.object({
   examDate: z.string().or(z.date()),

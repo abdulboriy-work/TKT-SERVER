@@ -1,0 +1,54 @@
+.
+├── dist
+│   ├── controllers
+│   │   ├── adminController.js
+│   │   ├── candidateController.js
+│   │   └── examController.js
+│   ├── index.js
+│   ├── middleware
+│   │   ├── auth.js
+│   │   └── errorHandler.js
+│   ├── routes
+│   │   ├── adminRoutes.js
+│   │   ├── candidateRoutes.js
+│   │   └── examRoutes.js
+│   ├── services
+│   │   ├── adminService.js
+│   │   ├── candidateService.js
+│   │   └── examService.js
+│   └── utils
+│       ├── auth.js
+│       └── jwt.js
+├── package.json
+├── prisma
+│   ├── dev.db
+│   ├── migrations
+│   │   ├── 20250119051150_added_exams_table_mods
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── src
+│   ├── controllers
+│   │   ├── adminController.ts
+│   │   ├── candidateController.ts
+│   │   └── examController.ts
+│   ├── index.ts
+│   ├── middleware
+│   │   ├── auth.ts
+│   │   └── errorHandler.ts
+│   ├── routes
+│   │   ├── adminRoutes.ts
+│   │   ├── candidateRoutes.ts
+│   │   └── examRoutes.ts
+│   ├── services
+│   │   ├── adminService.ts
+│   │   ├── candidateService.ts
+│   │   └── examService.ts
+│   └── utils
+│       ├── auth.ts
+│       └── jwt.ts
+├── tkt-server.txt
+├── tsconfig.json
+└── yarn.lock
+
+16 directories, 36 files

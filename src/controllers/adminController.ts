@@ -1,6 +1,7 @@
-import { AdminService } from '../services/adminService';
-import { hashPassword } from '../utils/auth';
+
 import { Request, Response } from 'express';
+import { AdminService } from '~/services/adminService';
+import { hashPassword } from '~/utils/auth';
 
 
 export class AdminController {
