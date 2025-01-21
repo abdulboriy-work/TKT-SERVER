@@ -10,11 +10,14 @@ require("express-async-errors");
 const adminRoutes_1 = require("./routes/adminRoutes");
 const examRoutes_1 = require("./routes/examRoutes");
 const errorHandler_1 = require("./middleware/errorHandler");
+const healthController_1 = require("./controllers/healthController");
+const healthCheckController = new healthController_1.HealthCheckController();
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3000;
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 // Routes
+app.get('/healthcheck', healthCheckController.healthCheck);
 app.use('/api/admins', adminRoutes_1.adminRoutes);
 app.use('/api/exams', examRoutes_1.examRoutes);
 // Error handling
